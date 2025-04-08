@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        /* Gaya dasar agar bisa digunakan di semua form */
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-form label {
+    font-weight: bold;
+}
+
+.custom-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tampilan login */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    </style>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="custom-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Masukkan Username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan Password" required>
+            
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+</body>
+</html>
